@@ -1,65 +1,36 @@
-/* src/Carousel.css */
+.box {
+ 
+  height: 100vh;
+  width: 100vh;
+}
 
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Adjust height as needed */
-    overflow: hidden;
-  }
-  
-  .image-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: cover; /* Ensure the image covers the entire area */
-  }
-  .carousel div img {
+.carousel-control-prev{
+  left: 5%;
+  color: gray !important;
+}
+
+.carousel-control-next {
+  right: 5%;
+  color: gray !important;
+}
+
+@media all and (min-width:600px){
+  .box-img {
+    position: absolute;
+    left: 25%;
     max-height: 100%;
     max-width: 100%;
   }
-  
-  .timer-bar-container {
+}
+@media all and (min-width:0px) and (max-width: 600px) {
+  .box-img {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px; /* Height of the progress bar */
-    background-color: #ccc; /* Background color of the progress bar container */
+    top: 25%;
+    max-height: 100%;
+    max-width: 100%;
   }
-  
-  .timer-bar {
-    height: 100%;
-    background-color: #4caf50; /* Color of the progress bar */
-  }
-  
-  button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 2rem;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .prev-button {
-    left: 0;
-  }
-  
-  .next-button {
-    right: 0;
-  }
-  
+}
+
+.carousel-item:nth-child(n+4) .box-img{
+  border: 2px solid red;
+}
