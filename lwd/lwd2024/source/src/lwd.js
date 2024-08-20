@@ -17,14 +17,14 @@ const Lwd = ({ images }) => {
       console.log("First");
     }
 
-    if(eventKey == 28) {
+    if(eventKey == 29) {
       console.log("Last");
     }
   }
 
   return (
-    <Carousel indicators={false} nextLabel={`Keep Reading`} prevLabel={`Missed Last one?`} onSlide={onSlide}
-      activeIndex={index} onSelect={handleSelect} controls={index == 28 ? false : true}>
+    <Carousel indicators={false} nextLabel={``} prevLabel={``} onSlide={onSlide}
+      activeIndex={index} onSelect={handleSelect} controls={index == 29 ? false : true}>
       {images.map((image, index) => (
         <Carousel.Item interval={5000}>
           <div className="box">

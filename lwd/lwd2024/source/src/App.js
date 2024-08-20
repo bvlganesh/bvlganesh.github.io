@@ -33,6 +33,7 @@ import image26 from './img/pic1.pdf-image-025.jpg';
 import image27 from './img/pic1.pdf-image-026.jpg';
 import image28 from './img/pic1.pdf-image-027.jpg';
 import image29 from './img/pic1.pdf-image-028.jpg';
+import image30 from './img/pic1.pdf-image-029.jpg';
 
 
 
@@ -40,7 +41,7 @@ function App() {
   const images = [
     image1,image2, image3, image4, image5, image6, image7, image8, image9, image10,
     image11,image12, image13, image14, image15, image16, image17, image18, image19, image20,
-    image21,image22, image23, image24, image25, image26, image27, image28, image29
+    image21,image22, image23, image24, image25, image26, image27, image28, image29, image30
   ];
 
   return (
